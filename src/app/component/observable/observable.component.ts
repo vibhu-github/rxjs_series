@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { DesignUtilityService } from 'src/app/service/design-utility.service';
 
 @Component({
   selector: 'app-observable',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ObservableComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private _du:DesignUtilityService) { }
+text1?:boolean;
   ngOnInit(): void {
+    this._du.text1.subscribe(res=>{
+      this.text1=res
+      
+      
+    })
+    
   }
+
 
 }
 

@@ -1,0 +1,30 @@
+<div class="my-3 mx-3">
+    <h2>Debounce</h2>
+    <br>
+<div class="row">
+    <div class="col-md-6">
+        <strong>Example 01<span class="text-primary"> Debounce Time</span></strong>
+       <hr>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label col-form-label-lg" >Search...</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" placeholder="Search.." #myinput>
+          </div>
+        </div>
+        <span *ngIf="reqdata!= null">requested data<strong class="text-success">{{reqdata}}</strong></span>
+    </div>
+    <div class="col-md-6">
+        <strong>Example 02<span class="text-warning"> Distinct Untill Changed</span></strong>
+       <hr>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label col-form-label-lg" >Search...</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control form-control-lg" placeholder="Search.." #myinput2>
+          </div>
+        </div>
+        <span *ngIf="reqdata2!= null">requested data<strong class="text-success">{{reqdata2}}</strong></span>
+    </div>
+</div>
+    
+</div>
+

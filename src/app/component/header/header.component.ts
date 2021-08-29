@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DesignUtilityService } from 'src/app/service/design-utility.service';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  exclusive:boolean=false;
 
-  constructor() { }
+  constructor(private _du:DesignUtilityService) { }
 
   ngOnInit(): void {
+    this._du.exclusive.subscribe(res=>{this.exclusive=res})
   }
 
 }

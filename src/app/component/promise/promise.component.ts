@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-promise',
@@ -6,72 +7,82 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./promise.component.scss']
 })
 export class PromiseComponent implements OnInit {
-  promiseval:any
-  dell={
-    brand:'Dell',
-    HardDisk:'2 TB',
-    color:'Black'
+
+  constructor(private route:Router){
 
   }
-  hp={
-    brand:'HP',
-    HardDisk:'1 TB',
-    color:'Silver'
+//   promiseval:any
+//   dell={
+//     brand:'Dell',
+//     HardDisk:'2 TB',
+//     color:'Black'
 
-  }
-  notAvil={
-    brand:'Not Available',
-    status:'Failed..'
-  }
+//   }
+//   hp={
+//     brand:'HP',
+//     HardDisk:'1 TB',
+//     color:'Silver'
 
-  constructor() { }
-  dellAvailable() {
+//   }
+//   notAvil={
+//     brand:'Not Available',
+//     status:'Failed..'
+//   }
+
+//   constructor() { }
+//   dellAvailable() {
     
-      return true;
+//       return true;
 
     
-  }
-  hpAvailable() {
+//   }
+//   hpAvailable() {
 
    
-      return false;
+//       return false;
 
  
-  }
+//   }
 
   ngOnInit(): void {
-    let buyLaptop = new Promise((resolve, reject) => {
-      // reject('Promise is rejected')
-      if(this.dellAvailable()){
-       setTimeout(() => {
-          // resolve('Dell is purchased')
-          resolve(this.dell)
+
+//     let buyLaptop = new Promise((resolve, reject) => {
+//       // reject('Promise is rejected')
+//       if(this.dellAvailable()){
+//        setTimeout(() => {
+//           // resolve('Dell is purchased')
+//           resolve(this.dell)
     
-        }, 3000);
+//         }, 3000);
       
-      }else if(this.hpAvailable()){
-         setTimeout(() => {
-          // resolve('HP is purchased')
-          resolve(this.hp)
-        }, 3000);
+//       }else if(this.hpAvailable()){
+//          setTimeout(() => {
+//           // resolve('HP is purchased')
+//           resolve(this.hp)
+//         }, 3000);
         
-      }
-      else{
-        // reject('Laptop is not available')
-        reject(this.notAvil)
-      }
-    });
+//       }
+//       else{
+//         // reject('Laptop is not available')
+//         reject(this.notAvil)
+//       }
+//     });
 
-    buyLaptop.then(res => {
+//     buyLaptop.then(res => {
 
-      console.log('then code=>', res)
-      this.promiseval=res;
-    }).catch(res => {
-      console.log('then reject code=>', res)
-      this.promiseval=res;
-    })
-  }
-  // myFunction(){
-  //   console.log('myFuction Called....')
-  // }
+//       console.log('then code=>', res)
+//       this.promiseval=res;
+//     }).catch(res => {
+//       console.log('then reject code=>', res)
+//       this.promiseval=res;
+//     })
+//   }
+//   // myFunction(){
+//   //   console.log('myFuction Called....')
+//   // }
+ }
+
+onClick(){
+  this.route.navigate(['observables']);
+}
 }

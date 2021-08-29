@@ -1,0 +1,72 @@
+<div class="py-3 mx-3"><h2>
+    Pluck
+</h2>
+<br>
+<div class="row">
+    <div class="col-md-6">
+<strong>Example-01</strong>
+<hr>
+<p class="bg-light border rounded py-3 px-2">
+    <strong>
+        pluck:
+    </strong>'using map+toarray
+</p>
+<br>
+<table class="table border">
+    <thead>
+        
+            <tr>
+                <th>
+                    Name
+                </th>
+
+            </tr>
+            
+        
+    </thead>
+    <tbody>
+        <tr *ngFor='let dataseq of data'>
+            <td>
+                {{dataseq}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+    </div>
+    <div class="col-md-6">
+        <strong>Example-02</strong>
+        <hr>
+        <p class="bg-light border rounded py-3 px-2">
+            <strong>
+                Pluck by nested property
+            </strong>
+        </p>
+        
+        
+        <br>
+<table class="table border">
+    <thead>
+        
+            <tr>
+                <th>
+                    Title
+                </th>
+
+            </tr>
+            
+        
+    </thead>
+    <tbody>
+        <tr *ngFor='let dataseq of data1'>
+            <td>
+                {{dataseq}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+           
+</div></div>
+

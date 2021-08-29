@@ -1,12 +1,13 @@
 <div class="my-3 mx-3">
-    <h2>Of and From</h2>
+    <h2 [ngStyle]="{'color':'#843784'}">Of and From</h2>
     <br>
-    <strong>Example-01(Of)</strong>
+    <strong [ngStyle]="{'color':'#843784'}">Example-01(Of)<em>Emit variable amount of values in a sequence and then emits a complete notification</em></strong>
     <hr>
     <div class="row">
         <div class="col-md-6">
             <p class=" bg-light py-2 px-3 border rounded">
-                <strong>Data:</strong>of('vibhu','Jatin','Manisha','Sugu','Shivani')</p>
+                <strong>Data:</strong>of('vibhu','Jatin','Manisha','Sugu','Shivani')
+            </p>
             <hr>
             <ul id="elContainer">
 
@@ -14,11 +15,52 @@
         </div>
         <div class="col-md-6">
             <p class=" bg-light py-2 px-3 border rounded">
-                <strong>Data:</strong>of(&#123;a:'vibhu',b:'Jatin',c:'Manisha',d:'Sugu',e:'Shivani'&#125;)</p>
+                <strong>Data:</strong>of(&#123;a:'vibhu',b:'Jatin',c:'Manisha',d:'Sugu',e:'Shivani'&#125;)
+            </p>
             <hr>
             <ul id="elContainer1">
+                <li><strong>a:</strong>{{obsMsg.a}}</li>
+                <li><strong>b:</strong>{{obsMsg.b}}</li>
+                <li><strong>c:</strong>{{obsMsg.c}}</li>
+                <li><strong>d:</strong>{{obsMsg.d}}</li>
+                <li><strong>e:</strong>{{obsMsg.e}}</li>
 
             </ul>
+        </div>
+    </div>
+    <hr>
+    <strong [ngStyle]="{'color':'#843784'}">Example-02(from)<em>Turn an array, promise(refresh page to see promise resolved after some time), or iterable into an observable</em></strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Array</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong>from(['Noddy','Pikachu','SpiderMan','Donald Duck'])
+            </p>
+            <hr>
+            <ul id="elContainer3"></ul>
+
+        </div>
+        <div class="col-md-4">
+            <strong>Promise</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong>from(promise)
+            </p>
+            <hr>
+            <ul id="elContainer4"></ul>
+
+        </div>
+        <div class="col-md-4">
+            <strong>String</strong>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong>from(String="welcome")
+            </p>
+            <hr>
+            <ul id="elContainer5"></ul>
+
         </div>
     </div>
 </div>

@@ -1,0 +1,25 @@
+<div class="my-4 mx-5" [ngStyle]="{'color':'purple'}">
+    <h2>Subject</h2>
+    <div id="xy" class="col-md-12"><span>
+    -->Every Subject is an Observable. Given a Subject, you can subscribe to it, providing an Observer, which will start receiving values normally. From the perspective of the Observer, it cannot tell whether the Observable
+        execution is coming from a plain unicast Observable or a Subject.<br>
+-->Every Subject is an Observer. It is an object with the methods next(v), error(e), and complete(). To feed a new value to the Subject, just call next(theValue), and it will be multicasted to the Observers registered to listen to the Subject.
+Here you can see two examples :-
+    </span><span id="zy"><em><br>1]exclusive tag on header is only for this component as you navigate to next it wiill
+        disappear ,so cross component communication is possible with the subject <br>2]Subject component has three child components where change in any of them is getting reflected in all the components as well as the main component </em></span></div>
+    <br>
+    <hr>
+    <h3>Username is <span class="text-success">{{userName}}</span></h3>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <app-comp1></app-comp1>
+        </div>
+        <div class="col-md-4">
+            <app-comp2></app-comp2>
+        </div>
+        <div class="col-md-4">
+            <app-comp3></app-comp3>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 <div class="my-3 mx-3">
-    <h2>From Event</h2>
+    <h3 [ngStyle]="{'color':'#843784'}">From Event(<span class="badge-warning">Keep on clicking  add button to visualize the stream of observables</span>)<br>
+        <em>This creates an Observable that emits events of a specific type coming from the given event target.</em>)</h3>
     <br>
     <div class="row">
         <div class="col-md-4">
@@ -9,7 +10,7 @@
                     Add Video
                 </div>
                 <div class="card-body">
-                    <button #addBtn class="btn btn-primary">Add</button>
+                    <button #addBtn class="btn btn-warning">Add</button>
                 </div>
             </div>
         </div>

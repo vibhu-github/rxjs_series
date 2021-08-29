@@ -13,9 +13,9 @@ ul.list li{
 
 ul.list li a{
     background-color: #f8f8f8;
-    border:2px solid  #477698;
-    border-radius: 5px;
-    color: #6296bb;
+    border:2px solid  #f526c1;
+    border-radius: 10px;
+    color: #8f1f57;
     transition: .3s ease all;
     line-height: 1;
     margin: 3px;
@@ -27,8 +27,8 @@ ul.list li a{
 }
 ul.list li a:hover{
     background:#e3f2fd;
-    color: #477698;
-    box-shadow: 0 0 60px #b3cada inset;
+    color: #eb0c95;
+    box-shadow: 0 0 60px #e04392 inset;
     text-decoration: none;
 
 }

@@ -1,0 +1,82 @@
+div{
+    color: hotpink;
+
+}
+#id1{
+    color: #f05fc4;
+    background-color: #8a2be233;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#id2{
+    font-size: 4rem;
+    font-family:cursive ;
+   
+
+}
+#id5{
+    font-style:normal;
+    font-size: 2rem;
+    color: rgb(247, 166, 226);
+}
+#id2 span{
+    display: inline-block;
+    font-weight: bolder;
+    animation: mover 6s linear infinite;
+    color: pink;
+}
+@keyframes mover{
+    0%{
+        text-shadow: 0 0 30 px rgba(0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30 px rgba(0,0,0,0.30);
+        transform: translate(30px);
+    }
+    100%{
+        text-shadow: 0 0 30 px rgba(0,0,0,0);
+    }
+}
+span:nth-child(1){
+    animation-delay: 0.5s;
+}
+span:nth-child(2){
+    animation-delay: 1s;
+}
+span:nth-child(3){
+    animation-delay: 1.5s;
+}
+span:nth-child(4){
+    animation-delay: 2s;
+}
+span:nth-child(5){
+    animation-delay: 2.5s;
+}
+span:nth-child(6){
+    animation-delay: 3s;
+}
+span:nth-child(7){
+    animation-delay: 3.5s;
+}
+span:nth-child(8){
+    animation-delay: 4s;
+}
+span:nth-child(9){
+    animation-delay: 4.5s;
+}
+span:nth-child(10){
+    animation-delay: 5s;
+}
+#id3{
+   background-color: #db709324;
+    color: #ff69b4c9;
+    border-radius: 1rem;
+    
+    margin: 1rem 1rem;
+
+}
+#id4 .img1{
+    margin-top: 2rem;
+    width:36rem;
+    border-radius:1rem;
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+ul.techList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul.techList li{
+    background: #f8f8f8;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 7px 13px;
+    margin-bottom: 10px;
+}
+ul.techList.error li{
+    color: red;
+    background-color: #ca8a8a2e;
+    border-color: red;
+}
+ul.techList.complete li{
+    color: green;
+    background-color: #00800030;
+    border-color: green;
+}
+
+.card-header{
+    background-color: rgb(233, 146, 200);
+    color: rgb(218, 37, 121);
+}
+li{
+    color: purple;
+}
